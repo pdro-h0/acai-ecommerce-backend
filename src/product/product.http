@@ -1,0 +1,24 @@
+@baseURL = http://localhost:3333
+
+POST {{baseURL}}/products
+Content-Type: application/json
+
+{
+    "name": "açai teste 2",
+    "description": "teste do açai",
+    "image": "http://google.com",
+    "basePrice": 12.00,
+    "promotionalPrice": 7.00,
+    "smallestPrice": 6.00,
+    "heighestPrice": 12.50,
+    "averagePrice": 12.00
+}
+
+### 
+GET {{baseURL}}/products
+
+###
+GET {{baseURL}}/products/231ac9a5-4755-46f5-bdb0-3123b5e34583
+
+###
+DELETE {{baseURL}}/products/231ac9a5-4755-46f5-bdb0-3123b5e34583

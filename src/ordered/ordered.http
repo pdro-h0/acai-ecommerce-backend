@@ -1,0 +1,27 @@
+@baseURL = http://localhost:3333
+
+POST {{baseURL}}/ordereds
+Content-Type:  application/json
+
+{
+    "date": "2021-09-01T00:00:00.000Z",
+    "totalValor": 45.00,
+    "items": [
+        {
+            "product":{
+                "productId": "010d324c-1f45-42d6-9cc1-05bea91e991d"
+            },
+            "unitPrice": 20.00,
+            "quantity": 1
+        }
+    ]
+}
+
+###
+GET {{baseURL}}/ordereds
+
+###
+GET {{baseURL}}/ordereds/86698206-c6e9-4a49-b84f-0fb3b2fa692b
+
+###
+DELETE {{baseURL}}/ordereds/86698206-c6e9-4a49-b84f-0fb3b2fa692b
